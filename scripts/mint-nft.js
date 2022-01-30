@@ -6,7 +6,6 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3")
 const web3 = createAlchemyWeb3(API_URL)
 const contract = require("../artifacts/contracts/TheDot.sol/TheDot.json")
-console.log(JSON.stringify(contract.abi))
 const contractAddress = "0x88287dbdfddd6bfe0eb3bb4949ac6ebb91d2f88b"
 const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
 
@@ -19,4 +18,32 @@ async function mintNFT(tokenURI) {
         'gas': 500000,
         'data': nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI()
     };
+    const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+    signPromise
+        .then((signedTx) => {
+            web3.eth.sendSignedTransaction(
+                signedTx.rawTransaction,
+                function (err, hash) {
+                    if (!err) {
+                        console.log(
+                            "The hash of your transaction is: ",
+                            hash,
+                            "\nCheck Alchemy's Mempool to view the status of your transaction!"
+                        )
+                    } else {
+                        console.log(
+                            "Something went wrong when submitting your transaction:",
+                            err
+                        )
+                    }
+                }
+            )
+        })
+        .catch((err) => {
+            console.log(" Promise failed:", err)
+        })
 }
+
+mintNFT(
+    "https://gateway.pinata.cloud/ipfs/QmZeJ5uNekUT4LfK2jDXmn1Y3hjkHBBZedk8uadaM7pPDY"
+)
