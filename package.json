@@ -1,0 +1,25 @@
+{
+  "name": "the.dot",
+  "version": "1.0.0",
+  "description": ".",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legion2002/the.dot.git"
+  },
+  "author": "tanishk goyal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/legion2002/the.dot/issues"
+  },
+  "homepage": "https://github.com/legion2002/the.dot#readme",
+  "devDependencies": {
+    "hardhat": "^2.8.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.2"
+  }
+}
