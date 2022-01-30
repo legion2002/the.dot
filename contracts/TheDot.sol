@@ -11,10 +11,11 @@ contract MyNFT is ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    constructor() public ERC721("MyNFT", "NFT") {}
+    constructor() public ERC721("the.dot", "DOT") {}
 
     function mintNFT(address recipient, string memory tokenURI)
-        public onlyOwner
+        public
+        onlyOwner
         returns (uint256)
     {
         _tokenIds.increment();
