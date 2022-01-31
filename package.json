@@ -2,15 +2,11 @@
   "name": "the.dot",
   "version": "1.0.0",
   "description": ".",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/legion2002/the.dot.git"
   },
-  "author": "tanishk goyal",
+  "author": "Tanishk Goyal ; Aditya Pratap Singh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/legion2002/the.dot/issues"
