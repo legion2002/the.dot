@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "thedot-e8b68"
+  },
+  "targets": {
+    "thedot-e8b68": {
+      "hosting": {
+        "thedot": [
+          "thedot"
+        ]
+      }
+    }
+  }
+}

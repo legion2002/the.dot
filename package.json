@@ -1,25 +1,41 @@
 {
-  "name": "the.dot",
-  "version": "1.0.0",
-  "description": ".",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/legion2002/the.dot.git"
-  },
-  "author": "Tanishk Goyal ; Aditya Pratap Singh",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/legion2002/the.dot/issues"
-  },
-  "homepage": "https://github.com/legion2002/the.dot#readme",
-  "devDependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.0.4",
-    "ethers": "^5.0.0",
-    "hardhat": "^2.8.3"
-  },
+  "name": "t",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@alch/alchemy-web3": "^1.1.11",
-    "@openzeppelin/contracts": "^4.4.2",
-    "dotenv": "^14.3.2"
+    "@metamask/onboarding": "^1.0.1",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "fs": "^0.0.1-security",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "stream": "^0.0.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

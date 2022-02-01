@@ -1,0 +1,25 @@
+{
+  "name": "the.dot",
+  "version": "1.0.0",
+  "description": ".",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legion2002/the.dot.git"
+  },
+  "author": "Tanishk Goyal ; Aditya Pratap Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/legion2002/the.dot/issues"
+  },
+  "homepage": "https://github.com/legion2002/the.dot#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "ethers": "^5.0.0",
+    "hardhat": "^2.8.3"
+  },
+  "dependencies": {
+    "@alch/alchemy-web3": "^1.1.11",
+    "@openzeppelin/contracts": "^4.4.2",
+    "dotenv": "^14.3.2"
+  }
+}
