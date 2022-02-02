@@ -2,22 +2,6 @@ import React, {useEffect, useState} from "react";
 import './App.css';
 import MetaMaskOnboarding from '@metamask/onboarding';
 
-const checkIfWalletIsConnect = async (setCurrentAccount) => {
-    try {
-        if (!window.ethereum) return; // alert("Please install MetaMask.");
-
-        const accounts = await window.ethereum.request({method: "eth_accounts"});
-        console.log("CHECK IF WALLERY IS CONNNNNNNNN");
-        if (accounts.length) {
-            setCurrentAccount(accounts[0]);
-        } else {
-            console.log("No accounts found");
-        }
-    } catch (error) {
-        console.log(error);
-    }
-};
-
 const connectWallet = async (setCurrentAccount) => {
     try {
         if (!window.ethereum) {
